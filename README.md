@@ -1,3 +1,7 @@
+# First Step
+
+Please, before trying to run this project, run npm install or yarn install to install all dependencies. Then you can continue with the other commands.
+
 ## Available Scripts
 
 In the project directory, you can run:

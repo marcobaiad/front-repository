@@ -1,6 +1,6 @@
 export const postTrasnference = async (newTrasnference) => {
   const request = await window.fetch(
-    `${process.env.REACT_APP_URL_BACKEND}/transferencias?`,
+    `${process.env.REACT_APP_URL_BACKEND}/transferencia?`,
     {
       method: 'POST',
       headers: {

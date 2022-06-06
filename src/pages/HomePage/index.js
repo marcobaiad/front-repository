@@ -9,7 +9,12 @@ import { useUserContext } from '../../contexts/user/userContext'
 const HomePage = () => {
   const navigate = useNavigate()
 
-  const { customers = [], nextPage = 1, getClientsHandler } = useUserContext()
+  const {
+    customers = [],
+    nextPage = 1,
+    getClientsHandler,
+    setSelectedCustomer,
+  } = useUserContext()
 
   useEffect(() => {
     if (!customers?.length) getClientsHandler()
@@ -42,7 +47,10 @@ const HomePage = () => {
             {customers?.map((customer) => (
               <CardComponent
                 key={customer.id}
-                callback={() => navigate(`accounts/${customer.id}`)}
+                callback={() => {
+                  setSelectedCustomer(customer)
+                  navigate(`accounts/${customer.id}`)
+                }}
               >
                 <CardBody>
                   <h3>{customer.userName}</h3>

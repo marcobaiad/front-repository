@@ -1,6 +1,7 @@
 import './transferenceForm.css'
 import { useAccountContext } from '../../contexts/account/accountsContext'
 import ButtonComponent from '../Button'
+import { useUserContext } from '../../contexts/user/userContext'
 
 const NewTransferenceForm = ({
   newTrasnference,
@@ -8,13 +9,14 @@ const NewTransferenceForm = ({
   setErrorAmount,
 }) => {
   const { selectedAccount, accounts, transferenceHandler } = useAccountContext()
+  const { selectedCustomer } = useUserContext()
 
   const checkTransferenceHandler = async (e) => {
     e.preventDefault()
     setErrorAmount(false)
     if (selectedAccount.amount < newTrasnference.amount)
       return setErrorAmount(true)
-    transferenceHandler(newTrasnference)
+    transferenceHandler({ ...newTrasnference, userId: selectedCustomer.id })
   }
 
   const onChangeHandler = (e) => {
