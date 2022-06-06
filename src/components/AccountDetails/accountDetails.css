@@ -1,0 +1,18 @@
+.button-container {
+  margin-top: 50px;
+}
+
+.subtitle {
+  text-decoration: underline;
+  margin-block: 50px;
+}
+
+.account-detail-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.account-detail-list li {
+  font-size: 20px;
+}

@@ -1,0 +1,50 @@
+.main-header {
+  background-color: var(--main-green);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 30px;
+}
+
+.menu-button {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.links-box {
+  min-width: 45%;
+}
+
+.links-box a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.links-box a:nth-of-type(2n) {
+  padding-left: 15px;
+}
+
+.links-box a:hover {
+  font-size: 23px;
+}
+
+@media screen and (max-width: 728px) {
+  .menu-button {
+    display: flex;
+  }
+  .links-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 728px) {
+  .menu-button {
+    display: none;
+  }
+  .links-box {
+    display: flex;
+    justify-content: center;
+  }
+}

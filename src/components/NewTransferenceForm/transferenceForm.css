@@ -1,0 +1,33 @@
+.form-new-transference {
+  display: flex; 
+  flex-direction: column; 
+  row-gap: 30px
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.form-control label {
+  font-size: 20px;
+}
+
+.form-control select, .form-control input {
+  height: 30px;
+  border: 1px solid #111;
+  border-radius: 5px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.submit-button {
+  background-color: var(--main-green);
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 7px;
+  color: white;
+  font-size: 20px;
+}

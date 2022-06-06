@@ -1,0 +1,16 @@
+.card-component {
+  background-color: var(--main-green);
+  border-radius: 10px;
+  max-width: calc(47% - 24px);
+  max-height: 250px;
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 728px) {
+  .card-component {
+    width: 245px;
+  }
+}

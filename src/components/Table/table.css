@@ -1,0 +1,7 @@
+.table-component {
+  border: .5px solid #000000;
+}
+
+.table-component tbody td {
+  padding-inline: 10px;
+}

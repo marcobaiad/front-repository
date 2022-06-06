@@ -1,3 +1,7 @@
+:root {
+  --main-green: rgba(50,204,51,255);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.prev-page {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  background-color: var(--main-green);
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
 }
